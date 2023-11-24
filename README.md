@@ -56,3 +56,4 @@ In a new file, try to write a solution to the "FizzBuzz" question below (which i
 
 > Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
+# javascript-1Chas
