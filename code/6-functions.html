@@ -3,22 +3,35 @@
   // Functions are a way to store a re-usable snippet of code in a block which can
   // be run later. For example, this function would print the current time when invoked:
   const printCurrentTime = () => {
-    const currentTime = new Date()
-    return currentTime.toLocaleTimeString()
-  }
+    const currentTime = new Date();
+    return currentTime.toLocaleTimeString();
+  };
 
   // Task 1: Invoke the printCurrentTime function inside a console.log():
-
+  // console.log(printCurrentTime());
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
+  // const myName = () => {
+  //   let name = "peywan";
+  //   console.log(name);
+  // };
 
+  // myName();
+  // myName();
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
   // below, it should print "Hello Bob" or "Hello Sue":
-  //
+
+  // const printGreeting = (name) => {
+  //   let hello = `hello ${name}`;
+  //   console.log(hello, printGreeting);
+  // };
+
+  // printGreeting("sue");
+  // printGreeting("bob");
+
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
-
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
   // so that it can be stored in a variable. See the example below to see how it should work.
@@ -29,7 +42,6 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
-
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
   // function. It should print "Go for a run!"
@@ -37,6 +49,34 @@
   // if (warmEnough(15)) {
   //   console.log("Go for a run!")
   // }
+
+  // let printFarewell = (name) => {
+  //   let names = `bye, it was nice meeting ${name}`;
+  //   console.log(names);
+  // };
+  // printFarewell("susan");
+
+  // let calculateAge = (birthYear) => {
+  //   const currentYear = new Date().getFullYear(); // Gets the current year
+  //   let age = currentYear - birthYear; // Calculates the age
+  //   console.log(`Your age is ${age}.`); // Prints the calculated age
+  // };
+
+  // calculateAge(1986);
+
+  // let calculateAge = (birthYear) => {
+  //   let age = `hey, whats your ${birthYear}?`;
+  //   console.log(birthYear);
+  // };
+
+  // calculateAge(1999);
+
+  let convertTemperature = (celsius) => {
+    let fahrenheit = (celsius * 9) / 5 + 32;
+    return `the temprature is ${fahrenheit}`;
+  };
+
+  console.log(convertTemperature(39));
 
 
 </script>
